@@ -1,0 +1,12 @@
+class Solution:
+    def numDistinct(self, s: str, t: str) -> int:
+        target=len(t)
+        dp=[1]+[0]*len(t)
+
+        for char in s:
+            for j in range(len(t),0,-1):
+                if char==t[j-1]:
+                    dp[j]+=dp[j-1]
+        return dp[target]
+#Just see this logic it's like n^2
+        
