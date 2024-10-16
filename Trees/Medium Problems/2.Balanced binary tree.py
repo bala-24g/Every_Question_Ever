@@ -17,4 +17,5 @@ class Solution:
         return res
 
 #Return if left height and right height difference is atmost 1.
-#We need to check two parameters, so check if 
+#We need to check two parameters: i.e are left and right trees balanced and if their heights to see if their difference is less than 1.
+#This is unlike the prev maxdepth one because in maxdepth you just had to check which of left and right had max height.
